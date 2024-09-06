@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Seção de pesquisa */
+section {
+    margin-bottom: 20px;
+}
+
+/* Campo de pesquisa */
+#searchInput {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background: #0056b3;
+}
+
+/* Mapa */
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+/* Resultados da pesquisa */
+#results {
+    margin-top: 20px;
+}
+
+#resultsList {
+    list-style-type: none;
+}
+
+#resultsList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
