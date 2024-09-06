@@ -51,23 +51,24 @@ section {
     background: #0056b3;
 }
 
-/* Mapa */
-#map {
-    height: 500px;
-    width: 100%;
-}
-
 /* Resultados da pesquisa */
 #results {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #resultsList {
     list-style-type: none;
+    padding: 0;
 }
 
 #resultsList li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+/* Mapa */
+#map {
+    height: 500px;
+    width: 100%;
 }
 
