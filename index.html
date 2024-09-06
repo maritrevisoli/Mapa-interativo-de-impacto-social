@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Interativo de Impacto Social</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Mapa Interativo de Impacto Social</h1>
     </header>
     <main>
+        <section>
+            <h2>Pesquisar Projetos</h2>
+            <input type="text" id="searchInput" placeholder="Digite o nome do projeto...">
+            <button id="searchButton">Buscar</button>
+        </section>
         <div id="map"></div>
+        <section id="results">
+            <h2>Resultados da Pesquisa</h2>
+            <ul id="resultsList"></ul>
+        </section>
     </main>
     <footer>
         <p>© 2024 Mapa Interativo de Impacto Social</p>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="script.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
