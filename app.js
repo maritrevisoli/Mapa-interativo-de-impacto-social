@@ -6,14 +6,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-// Adiciona marcadores para os projetos usando os dados
-const markers = {};
-projetos.forEach(projeto => {
-    const marker = L.marker(projeto.localizacao).addTo(map)
-        .bindPopup(`<b>${projeto.nome}</b><br>${projeto.descricao}`);
-    markers[projeto.nome.toLowerCase()] = marker;
-});
-
 // Função para atualizar a lista de resultados
 function updateResults(filteredProjects) {
     const resultsList = document.getElementById('resultsList');
@@ -42,7 +34,8 @@ document.getElementById('searchButton').addEventListener('click', () => {
 
     // Adiciona novos marcadores filtrados
     filteredProjects.forEach(projeto => {
-        L.marker(projeto.localizacao).addTo(map)
+        // Adiciona um marcador fictício para os projetos, centralizado no Brasil
+        L.marker([-15.7801, -47.9292]).addTo(map)
             .bindPopup(`<b>${projeto.nome}</b><br>${projeto.descricao}`);
     });
 });
