@@ -1,0 +1,11 @@
+function updateResults(filteredProjects) {
+  resultsList.innerHTML = ''; 
+
+  console.log("Projetos filtrados:", filteredProjects); // Adiciona esta linha para verificar os resultados no console
+
+  if (filteredProjects.length === 0) {
+    resultsList.innerHTML = '<p>Nenhum resultado encontrado.</p>';
+  } else {
+    // ... (resto da função)
+  }
+}
