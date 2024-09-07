@@ -14,4 +14,3 @@ const projetos = [
 
 // Exporta o array de projetos
 export default projetos;
-
